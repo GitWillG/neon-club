@@ -473,7 +473,6 @@ export default (e) => {
         //   (moodChangerColor[1] + beatFactor1 / 22) / 5,
         //   (moodChangerColor[2] + beatFactor1 / 30) / 5
         // );
-        neonClubEmissiveMaterial.uniforms.uBeat.value = beatFactor1;
         neonClubCyberLinesMaterial.uniforms.uBeat1.value = beatFactor1;
         neonClubCyberLinesMaterial.uniforms.uBeat2.value = beatFactor3;
         // sphere.material.uniforms.uBeat.value = beatFactor3;
@@ -510,6 +509,7 @@ export default (e) => {
     };
     if (beatSpeakerBass){
       reactWoofer = beatSpeakerBass;
+      neonClubEmissiveMaterial.uniforms.uBeat.value = beatSpeakerBass;
       // console.log(reactMid);
     };
     // if (speakers){
