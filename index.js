@@ -402,9 +402,9 @@ export default (e) => {
     // currentTime: 100.2,
   };
   document.body.onkeyup = (e) => {
-    if (e.code === 'Space') {
+    if (e.code === 'Digit1') {
       const audio = getAudio({ createOnCall: false });
-      console.log("space pressed");
+      console.log("1 pressed");
       if (audio.paused !== undefined) {
         if (audio.paused) {
           audio.play();
