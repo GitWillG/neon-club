@@ -10,8 +10,12 @@ uniform vec2 uResolution;
 uniform vec3 uMood;
 uniform float uTime;
 uniform float uBeat;
+
+
+
+gl_FragColor = vec4(col , 1.) ;
 `
 
 
 
-export { neonClubCyberLinesVertex, neonClubCyberLinesFragment }
+export { cloudVertex, cloudFragment }

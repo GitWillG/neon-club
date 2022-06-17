@@ -535,6 +535,7 @@ export default (e) => {
       const pink = new THREE.Color(1,0,1);
       if (reactWoofer >= 0.95){
         eGirlText.material.emissive.set(white);
+        neonClubCyberLinesMaterial.uniforms.uTime.value = 450;
       }else{
         eGirlText.material.emissive.set(pink);
       }
